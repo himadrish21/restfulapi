@@ -1,7 +1,13 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const cors = require('cors')
 const router = require("./routes/User-routes");
 const app = express();
+
+// app.use(cors({
+//   origin:"http://localhost:5000",
+//   methods :["GET","POST","PUT","DELETE"],
+// }))
 
 app.use(express.json());
 
